@@ -1,7 +1,13 @@
+h1 {
+    color: rgba(0,0,0,.5);
+}
+
 img{
  width: 50%;   
 }
 
 body { 
-background: green;
+background: url(../img/congruent_outline/congruent_outline.png);
 }
+
+#66cdaa
