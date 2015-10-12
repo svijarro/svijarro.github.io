@@ -1,15 +1,49 @@
-h1 {
-        color: silver;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
+/*Global*/
 
 img{
  width: 50%;   
 }
 
 body { 
-background:black;
+background:purple;
+color: white;
+font-size: 18;
 }
+
+
+/*Navigation*/
+
+a {
+    background: grey;
+    text-decoration: none;
+    
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    
+}
+
+li{
+display: inline;
+}
+
+/*Layout*/
+
+
+/*Typography*/
+
+h1 {
+    color: aquamarine;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+p{
+background: #66cdaa;
+padding: 20px;
+width: 300px;
+border: 5px double black;
+}
+
 
 #66cdaa
