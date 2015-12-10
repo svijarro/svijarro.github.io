@@ -8,8 +8,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  overflow: hidden; 
-  height: 100vh; 
+  overflow: hidden;
+  height: 100vh;
 }
 
 .main-title {
@@ -58,30 +58,30 @@ h1:nth-child(2) {
   right: 0;
 }
 
-.scroll-indicator{
-	width: 80px;
-	margin: 0 auto;
-	position: relative;
-}
-.scroll-left, .scroll-right{
-	width: 50px;
-	height: 8px;
-	background: white;
-	position: absolute;
-	top: 175px;
-}
-.scroll-left{
-	transform: rotate(45deg);
-	left: 0;
-	
-}
-.scroll-right{
-	transform: rotate(-45deg);
-	right: 0;
+.scroll-indicator {
+  width: 80px;
+  margin: 0 auto;
+  position: relative;
 }
 
+.scroll-left,
+.scroll-right {
+  width: 50px;
+  height: 8px;
+  background: white;
+  position: absolute;
+  top: 175px;
+}
 
+.scroll-left {
+  transform: rotate(45deg);
+  left: 0;
+}
 
+.scroll-right {
+  transform: rotate(-45deg);
+  right: 0;
+}
 /*=========
 NAVIGATION
 ===========*/
@@ -131,15 +131,13 @@ nav ul li a {
 nav ul li a:hover {
   color: #222;
 }
-
-
 /*======
-ABOUT
+RESUME
 ========*/
 
 #resume {
   width: 100%;
-  height: 600px;
+  height: 900px;
   background: white;
   margin-top: .25px;
 }
@@ -149,7 +147,6 @@ ABOUT
   width: 1000px;
   text-align: center;
   margin: 0 auto;
-  
 }
 
 .resume-image {
@@ -195,28 +192,24 @@ ABOUT
   line-height: 25px;
 }
 
-
 .resume-break {
   width: 100%;
   height: 350px;
-  background: linear-gradient(#222, transparent 30%),
-    linear-gradient(0deg, #222, transparent 30%), url('http://www.recommind.com/wp-content/uploads/2015/02/wave.jpg');
+  background: linear-gradient(#222, transparent 30%), linear-gradient(0deg, #222, transparent 30%), url('http://www.recommind.com/wp-content/uploads/2015/02/wave.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
 
-
 /*==========
 PORTFOLIO
 running into skill set
 ============*/
 
-
 #portfolio {
   width: 100%;
-  height: 600px;
+  height: 200px;
   background: white;
   margin-top: .25px;
 }
@@ -226,7 +219,6 @@ running into skill set
   width: 1000px;
   text-align: center;
   margin: 0 auto;
-  
 }
 
 .portfolio-image {
@@ -272,51 +264,43 @@ running into skill set
   line-height: 25px;
 }
 
-
 .portfolio-break {
   width: 100%;
   height: 350px;
-  background: linear-gradient(#222, transparent 30%),
-    linear-gradient(0deg, #222, transparent 30%), url('http://www.recommind.com/wp-content/uploads/2015/02/wave.jpg');
+  background: linear-gradient(#222, transparent 30%), linear-gradient(0deg, #222, transparent 30%), url('http://www.recommind.com/wp-content/uploads/2015/02/wave.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
 
-
 /*========
 GALLERY
 ===========*/
 
+#gallery {
+    height: 450px;
+  background: white;
+}
+
+
 figure {
-   width: 100px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background: white;
   border-bottom: 40px solid #fff;
-  
   float: left;
-  height: 150px;
   margin: 40px;
-  width: 150px;
   position: relative;
-}
- /* located at top of page-fix me */
-.controls {
-  color: #333;
-  padding: 5px;
-  text-align: center;
-  letter-spacing: 3px;
   
-  position: absolute;
-  top: 0;
-  left: -40px;
-  width: 100%;
-  z-index: 2;
+}
+
+img {
+    max-width: 200px;
 }
 
 img:focus {
-  border: 5px solid blue;
+  border: 5px solid lightblue;
 }
 
 img:hover {
@@ -327,14 +311,6 @@ img:active {
   border: 5px solid #222;
 }
 
-
-.gallery item-3 {
- 
-}
-
-.controls {
-  
-}
 
 /*======
 CONTACT
@@ -351,18 +327,15 @@ CONTACT
 .contact {
   font: small-caps 500 85px 'century gothic', sans-serif;
   letter-spacing: 3px;
-  color:white;
+  color: white;
   text-align: center;
   margin-bottom: 25px;
-  
 }
 
 .contact-wrapper {
   text-align: center;
   margin-top: 10px;
 }
-
-
 /*=======
 INPUT
 ========*/
@@ -372,7 +345,8 @@ INPUT
   margin: 15px 5px;
 }
 
-.name, .email {
+.name,
+.email {
   width: 326px;
   height: 25px;
   background-color: #111;
@@ -400,17 +374,18 @@ input {
   border-radius: 5px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   background-color: #404040;
   outline: none;
-  transition-duration: 0.5s;  
-}
-
-input:hover, textarea:hover {
-  background-color: #404040  ;
   transition-duration: 0.5s;
 }
 
+input:hover,
+textarea:hover {
+  background-color: #404040;
+  transition-duration: 0.5s;
+}
 /*=======
 BUTTON
 ========*/
@@ -437,4 +412,11 @@ button:active {
 button:hover {
   background-color: #A8A8A8;
   transition-duration: 0.5s;
+}
+
+
+@media (max-width: 480px) {
+  section {
+    background-position: none;
+  }
 }
