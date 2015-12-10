@@ -279,24 +279,22 @@ GALLERY
 ===========*/
 
 #gallery {
-    height: 450px;
-  background: white;
+    margin: auto;
+  width: 900px;
 }
 
-
 figure {
-  width: 150px;
-  height: 150px;
-  background: white;
-  border-bottom: 40px solid #fff;
-  float: left;
-  margin: 40px;
+  width: 200px;
+  height: 200px;
+  display: inline;
+  text-align: center;
   position: relative;
   
 }
 
 img {
     max-width: 200px;
+  margin-bottom: 50px;
 }
 
 img:focus {
