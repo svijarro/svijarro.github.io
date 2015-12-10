@@ -1,160 +1,440 @@
-/*Global*/
-
-img{
- width: 50%;   
+body {
+  margin: 0;
+  padding: 0;
 }
 
-body { 
-background:purple;
-font-family: poiret one;
-color: white;
-font-size: 18;
+#home {
+  background-image: url('http://www.recommind.com/wp-content/uploads/2015/02/wave.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; 
+  height: 100vh; 
+}
+
+.main-title {
+  text-align: center;
+  width: 900px;
+  height: 260px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  position: relative;
+  top: 30%;
+  color: #FFF;
+}
+
+.main-wrapper {
+  width: 780px;
+  height: 260px;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  margin: 0 auto;
+}
+
+.main-wrapper > h1 {
+  font: small-caps 700 110px 'century gothic', sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+h1:nth-child(2) {
+  font: small-caps 300 110px 'century gothic', sans-serif;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+}
+
+.scroll-indicator{
+	width: 80px;
+	margin: 0 auto;
+	position: relative;
+}
+.scroll-left, .scroll-right{
+	width: 50px;
+	height: 8px;
+	background: white;
+	position: absolute;
+	top: 175px;
+}
+.scroll-left{
+	transform: rotate(45deg);
+	left: 0;
+	
+}
+.scroll-right{
+	transform: rotate(-45deg);
+	right: 0;
 }
 
 
-/*Navigation*/
 
-a {
-    background: grey;
-    text-decoration: none;
-    
-    display: inline-block;
-    width: 100px;
-    height: 50px;
-    
+/*=========
+NAVIGATION
+===========*/
+
+nav {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(34, 98, 105, 0.9);
+  z-index: 2;
+  opacity: .75;
 }
 
-li{
-display: inline;
+.home-link a {
+  float: left;
+  text-decoration: none;
+  color: #E8E8E8;
+  margin-left: 40px;
+  letter-spacing: 3px;
+  font: small-caps 100 45px 'century gothic', sans-serif;
 }
 
-/*Layout*/
-
-
-/*Typography*/
-
-
-h1 {
-    color: aquamarine;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+.bold-design {
+  font-weight: bold;
 }
 
-p{
-background: #66cdaa;
-padding: 20px;
-width: 300px;
-border: 5px double black;
+nav ul li {
+  position: relative;
+  left: -49px;
+  display: inline-block;
+  float: right;
 }
 
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  opacity: .75;
+  width: 100px;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  font: small-caps 20px 'century gothic', sans-serif;
+  letter-spacing: 1px;
+}
 
-#66cdaa
-
-
-/* Global
-================================ */
-
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+nav ul li a:hover {
+  color: #222;
 }
 
 
-.grid-container {
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-left: auto;
-	margin-right: auto;
-}
-img {
-	width: 100%;
-}
+/*======
+ABOUT
+========*/
 
-/* Media Queries
-================================ */
-
-@media (min-width: 1px) and (max-width: 767px)  {
-	.grid-container > [class^="grid-"] {
-		padding-top: 5px;
-		padding-bottom: 5px;
-	}
-	.hide-mobile {
-		display: none;
-	}
+#resume {
+  width: 100%;
+  height: 600px;
+  background: white;
+  margin-top: .25px;
 }
 
-@media (min-width: 768px) {
-
-	/* Columns
-	================================ */
-
-	.grid-container > [class^="grid-"] {
-		float: left;
-		min-height: 1px;
-		padding-left: 10px;
-		padding-right: 10px;
-		margin-left: 2%;
-	}
-	.grid-container > [class^="grid-"]:first-child {
-		margin-left: 0;
-	}
-	.grid-container > [class^="grid-"]:last-child {
-		float: right;
-	}
-
-	/* Columns are 65px wide, with 20px gutters
-	=========================================== */
-
-	.grid-1 {
-		width: 6.5%;
-	}
-	.grid-2 {
-		width: 15%;
-	}
-	.grid-3 {
-		width: 23.5%;
-	}
-	.grid-4 {
-		width: 32%;
-	}
-	.grid-5 {
-		width: 40.5%;
-	}
-	.grid-6 {
-		width: 49%;
-	}
-	.grid-7 {
-		width: 57.5%;
-	}
-	.grid-8 {
-		width: 66%;
-	}
-	.grid-9 {
-		width: 74.5%;
-	}
-	.grid-10 {
-		width: 83%;
-	}
-	.grid-11 {
-		width: 91.5%;
-	}
-	.grid-12 {
-		width: 100%;
-	}
-
-	/* Clearfix
-	================================ */
-
-	.grid-container:after,
-	.group:after {
-	  content: " ";
-	  display: table;
-	  clear: both;
-	}
+.resume-wrapper {
+  height: 380px;
+  width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  
 }
-@media (min-width: 1200px) {
-	.grid-container {
-		max-width: 1100px;
-	}
+
+.resume-image {
+  float: left;
+  width: 350px;
+  height: 350px;
+  margin-top: 5px;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+
+.resume-text {
+  margin: 0;
+  display: inline-block;
+  height: 350px;
+  width: 500px;
+  font: 19px 'century gothic', sans-serif;
+  color: #555;
+  text-align: left;
+  letter-spacing: .5px;
+  line-height: 25px;
+}
+
+.resume-text > h1 {
+  font: small-caps 500 85px 'century gothic', sans-serif;
+  letter-spacing: 3px;
+  color: #222;
+  margin: 0;
+  margin-left: -5px;
+  margin-bottom: -15px;
+}
+
+.resume-text {
+  margin: 0;
+  margin-top: -5px;
+  display: inline-block;
+  height: 350px;
+  width: 500px;
+  font: 17px 'century gothic', sans-serif;
+  color: #555;
+  text-align: left;
+  letter-spacing: .5px;
+  line-height: 25px;
+}
+
+
+.resume-break {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(#222, transparent 30%),
+    linear-gradient(0deg, #222, transparent 30%), url('http://www.recommind.com/wp-content/uploads/2015/02/wave.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+/*==========
+PORTFOLIO
+running into skill set
+============*/
+
+
+#portfolio {
+  width: 100%;
+  height: 600px;
+  background: white;
+  margin-top: .25px;
+}
+
+.portfolio-wrapper {
+  height: 380px;
+  width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+.portfolio-image {
+  float: left;
+  width: 350px;
+  height: 350px;
+  margin-top: 5px;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+
+.portfolio-text {
+  margin: 0;
+  display: inline-block;
+  height: 350px;
+  width: 500px;
+  font: 19px 'century gothic', sans-serif;
+  color: #555;
+  text-align: left;
+  letter-spacing: .5px;
+  line-height: 25px;
+}
+
+.portfolio-text > h1 {
+  font: small-caps 500 85px 'century gothic', sans-serif;
+  letter-spacing: 3px;
+  color: #222;
+  margin: 0;
+  margin-left: -5px;
+  margin-bottom: -15px;
+}
+
+.portfolio-text {
+  margin: 0;
+  margin-top: -5px;
+  display: inline-block;
+  height: 350px;
+  width: 500px;
+  font: 17px 'century gothic', sans-serif;
+  color: #555;
+  text-align: left;
+  letter-spacing: .5px;
+  line-height: 25px;
+}
+
+
+.portfolio-break {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(#222, transparent 30%),
+    linear-gradient(0deg, #222, transparent 30%), url('http://www.recommind.com/wp-content/uploads/2015/02/wave.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+/*========
+GALLERY
+===========*/
+
+figure {
+   width: 100px;
+  height: 300px;
+  background: white;
+  border-bottom: 40px solid #fff;
+  
+  float: left;
+  height: 150px;
+  margin: 40px;
+  width: 150px;
+  position: relative;
+}
+ /* located at top of page-fix me */
+.controls {
+  color: #333;
+  padding: 5px;
+  text-align: center;
+  letter-spacing: 3px;
+  
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 100%;
+  z-index: 2;
+}
+
+img:focus {
+  border: 5px solid blue;
+}
+
+img:hover {
+  border: 2px solid #222;
+}
+
+img:active {
+  border: 5px solid #222;
+}
+
+
+.gallery item-3 {
+ 
+}
+
+.controls {
+  
+}
+
+/*======
+CONTACT
+=========*/
+
+#contact {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(9, 9, 9);
+  z-index: 2;
+  opacity: .75;
+}
+
+.contact {
+  font: small-caps 500 85px 'century gothic', sans-serif;
+  letter-spacing: 3px;
+  color:white;
+  text-align: center;
+  margin-bottom: 25px;
+  
+}
+
+.contact-wrapper {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/*=======
+INPUT
+========*/
+
+.input {
+  display: inline-block;
+  margin: 15px 5px;
+}
+
+.name, .email {
+  width: 326px;
+  height: 25px;
+  background-color: #111;
+  color: #808080;
+  font: small-caps 700 20px 'century gothic';
+  padding-left: 15px;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+textarea {
+  width: 685px;
+  height: 200px;
+  margin-bottom: 15px;
+  background-color: #222;
+  color: #808080;
+  font: small-caps 700 20px 'century gothic';
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  overflow: auto;
+}
+
+input {
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  background-color: #404040;
+  outline: none;
+  transition-duration: 0.5s;  
+}
+
+input:hover, textarea:hover {
+  background-color: #404040  ;
+  transition-duration: 0.5s;
+}
+
+/*=======
+BUTTON
+========*/
+
+button {
+  border-radius: 5px;
+  font: small-caps 700 20px 'century gothic';
+  width: 150px;
+  padding-bottom: 5px;
+  background-color: #404040;
+  color: #FFF;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+button:hover {
+  background-color: #A8A8A8;
+  transition-duration: 0.5s;
 }
